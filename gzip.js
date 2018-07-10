@@ -1,11 +1,13 @@
+const Authorization = process.env.BATTLERITE_TOKEN
+
 const axios = require('axios')
 const client = axios.create({
-    baseUrl: '<endpoint-url>',
+    baseURL: 'https://api.dc01.gamelockerapp.com',
     headers: {
-        Authorization: '<api-key>',
+        Authorization,
         Accept: 'application/vnd.api+json',
         'Accept-Encoding': 'gzip'
     }
 })
 
-client.get()
+client.get('/status').then(res => console.log(res.data)).catch(console.log)
