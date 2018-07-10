@@ -1,0 +1,14 @@
+{
+  "name": "battlerite_axios",
+  "version": "1.0.0",
+  "description": "a collection of battlerite examples using axios",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alexander Collins",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
+}
